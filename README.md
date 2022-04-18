@@ -1,3 +1,4 @@
 # kokoa clone 2020
 
-practice github upload.
+practice github easy upload.
+stretch your body
