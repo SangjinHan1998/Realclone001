@@ -2,25 +2,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="css/style.css">    <!--link:css 를 치면 필요한 css 코드 자동 생성-->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to KOKOA Talk</title>
+    <title>Welcome to COCOA Talk</title>
 </head>
 <body>
-    <div id = "status-bar">
+    <div class = "status-bar">
         <div class = "status-bar__column">
             <span>No Service</span>
+            <i class="fa-solid fa-wifi"></i>    
+            <!--
+            아래의 script 에 의해 형성된다. 
+            저 script 를 지우면 이 코드의 효과도 사라짐
+            -->
             <!--To do : wifi icon-->
         </div>
         <div class = "status-bar__column">
             <span>18:43</span>
         </div>
         <div class = "status-bar__column">
-            <span>11%</span>
+            <span>54%</span>
+            <i class="fa-solid fa-battery-half fa-2x"></i>
+            <i class="fa-solid fa-bolt-lightning"></i>
             <!--battery icon-->
             <!--lightning icon-->
         </div>
     </div>
+
+    <header class = "welcome-header">
+        <h1 class = "welcome-header__title">Welcome to CoCoa Clone</h1>
+        <p  class = "welcome-header__text">
+            If you have a CaCoa Account, 
+            log in with your email or phone number.
+        </p>
+    </header>
+
+    <form id = "login-form">
+        <input type = "text" placeholder="Email or phone number">
+        <input type = "password" placeholder="Password" />
+        <input type = "submit" value = "Log In" />
+        <a href = "#">Find CoCoa Account or Password</a>
+    </form>
+
+
+    <script 
+        src="https://kit.fontawesome.com/0a3b45ccb2.js" 
+        crossorigin="anonymous">
+    </script>
 </body>
 </html>
