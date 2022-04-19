@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
 @import "reset.css";
 @import "status-bar.css";
+@import "variables.css";
 
 body {
     font-family: 'Quicksand', sans-serif;
@@ -15,12 +16,62 @@ body {
     font-weight: 600;
 }
 .welcome-header__title {
-    margin-bottom: 60px;
+    margin-bottom: 50px;
     font-size: 25px;
 }
 
 .welcome-header__text {
-    width:50%;
+    width:60%;
+    opacity:0.7;
 }
 
+#login-form {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 30px;
+}
 
+#login-form input {
+    border: none;
+    padding: 10px 0px;
+    font-size: 18px;
+    border-bottom: 1px solid rgba(0,0,0,0.4);
+    margin-bottom: 20px;
+    transition: border-color .3s ease-in-out;
+}
+
+#login-form input:not([type="submit"])  {
+    border-bottom: 3px solid rgba(0,0,0,0.4);
+    transition: border-color 0.5s ease-in-out;
+}
+/* input type="submit"이 아닐 때 
+    border-bottom 값과 transition값이 적용된다. */
+
+
+/* CSS 트랜지션은 CSS 속성을 변경할 때 애니메이션 속도를 조절하는 방법을 제공합니다.
+    CSS transition  provide method when CSS property change animation speed */
+
+#login-form input::placeholder {
+    color: rgba (0,0,0,0.4);
+}
+
+#login-form input:focus {
+    border-color:var(--skyblue);
+}
+
+#login-form input[type="submit"] {
+    background-color:var(--skyblue);
+    cursor: pointer; /* change mouse cursor */
+    padding: 20px 0px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px #0067a3;
+}
+
+/* negation --> not(X) 선택자 X를 취하는 기능 표시법*/
+
+#login-form a {
+    text-align: center;
+    text-decoration: none;
+    color:inherit; /* inherit = 상속 */
+    font-size: 15px;
+}
