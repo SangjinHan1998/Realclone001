@@ -8,7 +8,7 @@
     width: 33%;
 }
 
-.status-bar__column:first-child span{
+.status-bar__column:first-child {
     margin-right: 5px;
     background-color:#30BCDF;
 
